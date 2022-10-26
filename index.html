@@ -1,92 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tugas Pengenalan Website</title>
-  </head>
-  <body>
-    <header>
-      <h1>BIODATA</h1>
-      <div class="Intro">INTRO</div>
-      <br />
-      <img width="300px" height="400px" src="Me.jpeg" />
-      <div class="Bio">
-        <h2>INFO about Me</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PraktikumMg2.css"/>
+    <title>Hans</title>
+</head>
+<body>
+    <section id="beranda" class="background">
+        <div class="header">
+            <img src="Me.jpeg" alt="">
+            <h2>Hans Bonatua Batubara</h2>
+        </div>
+        <div class="Text">
+            <ul>
+                <li><a href="https://www.instagram.com/iteraofficial/"><Mahasiswa/a></li>
+                <li>Informatika</li>
+            </ul>
+        </div>
+    </section>
+    <nav class="navbar">
         <ul>
-          <li>Hans Bonatua Batubara</li>
-          <li>Mahasiswa</li>
-          <li>120140131</li>
+            <li><a href="#beranda">beranda</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#hubungi">Pesan</a></li>
         </ul>
-      </div>
-    </header>
-    <main>
-      <p>
-        Sedikit tentang saya lahir dan tumbuh di kota Medan dan saya sedang
-        berkuliah, saya tertarik dengan hal-hal
-        <br />
-        random dan unik
-        <br />
-        saya orang berjiwa bebas dan tidak suka dibatasi. mungkin itu aja yang
-        bisa saya beritahu tentang saya semoga menarik
-      </p>
-      <br />
-      Biografi singkat
-      <table border="2">
-        <tr>
-          <td>domisili</td>
-          <td>durasi</td>
-          <td>asal sekolah</td>
-        </tr>
-        <tr>
-          <td>medan</td>
-          <td>2018-2020</td>
-          <td>Smas Sutomo</td>
-        </tr>
-        <tr>
-          <td>lampung</td>
-          <td>2020-2024</td>
-          <td>ITERA</td>
-        </tr>
-      </table>
-    </main>
-    <footer>
-      <h2>Credits</h2>
-      <ol>
-        <li>
-          <a href="https://www.instagram.com/hansbb_299/"
-            ><strong>instagram</strong></a
-          >
-        </li>
-        <li>
-          <a href="https://wa.me/qr/JIFALHVOOZL3L1"
-            ><strong>whatsapp</strong></a
-          >
-        </li>
-      </ol>
-
-      <label for="nama">Nama :</label>
-      <input type="text" name="nama" />
-      <p>Sudah follow akun Instagram saya ?</p>
-      <p><input type="radio" name="tanya" /> Sudah</p>
-      <p><input type="radio" name="tanya" /> Belum</p>
-
-      <p>MTolong dong tonton video ini</p>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/wQmqK1nfIdA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p>Baguskan ?</p>
-      <p><input type="checkbox" name="pilih" />Lumayan</p>
-      <p><input type="checkbox" name="pilih" />Keren banget</p>
-      <p><input type="checkbox" name="pilih" />Ok</p>
-
-      <button type="Submit">Kirim</button>
-    </footer>
-  </body>
+    </nav>
+    <section id="tentang">
+        <h2>Tentang</h2>
+        <div class="box" align="justify">
+            <p>
+                <span class="capt">H</span>
+                aiiii Nama saya Hans Bonatua Batubara,  saya orang berjiwa bebas dan tidak suka dibatasi. 
+                Saya juga merupakan mahasiswa program studi teknik informatika di Institut Teknologi Sumatera
+                dan sedang tinggal diprovinsi Lampung. dan sekarang saya menempuh kuliah pada semester 5 
+            </p>
+        </div>
+    </section>
+    <section class="Background"id="hubungi">
+        <div class="form">
+            <h2>ubungi Saya</h2>
+            <form method="get">
+              Nama Anda :
+              <input type="text" name="nama" id="nama" placeholder="Ketik Nama Disini.."/> 
+              <p>MASUKAN Pesannya</p>
+              <textarea name="pesan" cols="40" rows="20" placeholder="disini ya"></textarea>
+              <input type="submit" value="submit"/>
+           </form>
+        </div>
+    </section>
+</body>
 </html>
